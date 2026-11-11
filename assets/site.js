@@ -34,8 +34,8 @@
     if (diff <= 0) {
       if (timer) timer.hidden = true;
       if (launchText) launchText.textContent = lang === "ru"
-        ? "Запланированное время старта наступило. Проверяй доступность на странице Roblox."
-        : "The scheduled launch time has arrived. Check availability on the Roblox game page.";
+        ? "🟢 Игра открыта! Новое обновление: VIP-гараж (гиперкар, суперкар, лимузин) и дома мечты. Промокод OPEN1111."
+        : "🟢 The game is OPEN! New update: VIP garage (hypercar, supercar, limo) and dream houses. Code OPEN1111.";
       return false;
     }
     var total = Math.floor(diff / 1000);

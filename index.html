@@ -72,7 +72,7 @@ h2{font-size:28px;margin:0 0 16px}
 <div class="foot">SwapMe Fox City · игра в Roblox · <a href="https://x.com/dtDWZ91l1eUEAIO">X</a> · <a href="https://www.tiktok.com/@swapmefoxcity">TikTok</a> · <a href="https://www.youtube.com/channel/UCB5VlyEtYK2ac3uzUVtD4jw">YouTube</a><br>Не связано с Roblox Corporation.</div>
 <script>
 const T=Date.UTC(2026,10,11,17,0,0);
-function tick(){const r=T-Date.now();if(r<=0){document.getElementById('cd').style.display='none';document.getElementById('note').textContent='Игра открыта — заходи!';return}
+function tick(){const r=T-Date.now();if(r<=0){setTimeout(function(){location.replace('https://www.roblox.com/games/124887751218092')},1500);document.getElementById('cd').style.display='none';document.getElementById('note').textContent='Игра открыта — заходи!';return}
 const s=Math.floor(r/1000);d.textContent=Math.floor(s/86400);h.textContent=Math.floor(s%86400/3600);m.textContent=Math.floor(s%3600/60);document.getElementById('s').textContent=s%60}
 tick();setInterval(tick,1000);
 </script>

@@ -7,8 +7,10 @@
   var lang = document.documentElement.lang === "en" ? "en" : "ru";
   var allowedSources = new Set(["tiktok", "youtube", "yt_shorts", "instagram", "pinterest", "reddit", "discord", "creator", "x", "google", "friend", "direct"]);
   var params = new URLSearchParams(window.location.search);
-  var rawSource = (params.get("src") || "").trim().toLowerCase();
-  var source = allowedSources.has(rawSource) ? rawSource : "direct";
+  var rawSource = (params.get("src") || params.get("utm_source") || "").trim().toLowerCase();
+  var aliases = { search: "google", shorts: "yt_shorts", youtube_shorts: "yt_shorts" };
+  var normalizedSource = aliases[rawSource] || rawSource;
+  var source = allowedSources.has(normalizedSource) ? normalizedSource : "direct";
   var configured = window.FOX_CITY_SHARE_LINKS || {};
   var candidate = configured[source];
   function safeRobloxUrl(value) {

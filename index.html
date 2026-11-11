@@ -18,6 +18,20 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"VideoGame","name":"SwapMe Fox City","description":"Free Roblox tycoon set in a Prague-inspired city with coin booth progression, trading and activities.","url":"https://molotroka123-cell.github.io/swapme-fox-city/","image":"https://molotroka123-cell.github.io/swapme-fox-city/og-cover.jpg","genre":["Tycoon","Simulation","Adventure"],"gamePlatform":"Roblox","applicationCategory":"Game","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"playMode":"MultiPlayer","sameAs":["https://x.com/dtDWZ91l1eUEAIO","https://www.tiktok.com/@swapmefoxcity","https://www.youtube.com/channel/UCB5VlyEtYK2ac3uzUVtD4jw"]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"SwapMe Fox City бесплатная?","acceptedAnswer":{"@type":"Answer","text":"Да, вход в игру бесплатный. Дополнительные косметические покупки могут быть доступны за Robux."}},{"@type":"Question","name":"Где найти SwapMe Fox City?","acceptedAnswer":{"@type":"Answer","text":"Откройте официальную страницу игры в Roblox по ссылке на сайте SwapMe Fox City."}},{"@type":"Question","name":"Можно играть с друзьями?","acceptedAnswer":{"@type":"Answer","text":"В игре предусмотрены совместные занятия, включая обмен и исследование города. Доступность отдельных режимов зависит от текущей сборки."}}]}]}</script>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦊</text></svg>">
 <style>
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.gallery figure{margin:0;border-radius:16px;overflow:hidden;background:#1e1238;position:relative}
+.gallery img,.gallery video{width:100%;display:block;aspect-ratio:3/4;object-fit:cover;transition:transform .6s ease}
+.gallery figure:hover img{transform:scale(1.06)}
+.gallery figcaption{font-size:13px;color:#cbbfe8;padding:8px 10px}
+.reveal{animation:rise .8s ease both}
+@keyframes rise{from{opacity:.001;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.floaty{animation:floaty 4s ease-in-out infinite}
+.socials{display:flex;flex-wrap:wrap;gap:10px}
+.socials a{display:inline-flex;gap:8px;align-items:center;padding:10px 16px;border-radius:999px;background:#1e1238;border:1px solid rgba(168,85,247,.45);color:#fff;text-decoration:none;font-weight:600}
+.socials a:hover{border-color:#ff8a1f}
+@media (prefers-reduced-motion:reduce){.reveal,.floaty,.gallery img{animation:none;transition:none}}
+
 :root{--bg:#120a24;--card:#1e1238;--ink:#fff;--muted:#cbbfe8;--orange:#ff8a1f;--violet:#a855f7;--gold:#ffd166}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
 .hero{position:relative;min-height:78vh;display:flex;align-items:flex-end;background:radial-gradient(1200px 600px at 70% 20%,#ff8a1f55,transparent 60%),linear-gradient(110deg,#120a24bb,#120a2466),url("og-cover.jpg") center/cover,linear-gradient(160deg,#2a1150,#120a24)}
@@ -103,6 +117,30 @@ a:focus-visible,button:focus-visible{outline:3px solid #fff;outline-offset:4px}
 <p class="note">Гайды: <a style="color:#a98bf0" href="guide/coin-merge-guide.html">как слить 3 монеты</a> · <a style="color:#a98bf0" href="guide/roblox-tycoon-to-play-with-friends.html">tycoon to play with friends</a></p>
 </section>
 
+<section id="world" class="reveal">
+ <h2>Мир Fox City · The world</h2>
+ <p>Fox City — город из кубиков по мотивам Праги. В центре — площадь с золотой лисой и твоей будкой с монетами. Через реку ведёт Карлов мост, над Старым городом звонит Орлой, на холме стоит Град, куда поднимает фуникулёр. По улицам ходят трамваи, на острове работает парк аттракционов, за городом — лыжные трассы и картинг, а вечером открывается клуб EPIX. Fox City is a block-built Prague-inspired city in Roblox: a coin-booth tycoon in the main square, Charles Bridge, the Orloj, the castle hill with a funicular, trams, karts, ski runs and the EPIX club.</p>
+ <div class="gallery">
+  <figure><video src="img/paraglide.mp4" autoplay muted loop playsinline poster="img/paraglide.jpg"></video><figcaption>Полёт над городом</figcaption></figure>
+  <figure><img src="img/bridge.jpg" alt="Лис на Карловом мосту, вид на Град" loading="lazy"><figcaption>Карлов мост и Град</figcaption></figure>
+  <figure><img src="img/plaza.jpg" alt="Друзья на площади с золотой лисой" loading="lazy"><figcaption>Площадь с золотой лисой</figcaption></figure>
+  <figure><img src="img/opening.jpg" alt="Открытие Fox City на площади, Орлой" loading="lazy"><figcaption>Старый город и Орлой</figcaption></figure>
+  <figure><img src="img/funicular.jpg" alt="Фуникулёр к замку" loading="lazy"><figcaption>Фуникулёр</figcaption></figure>
+  <figure><img src="img/ski.jpg" alt="Лыжные трассы" loading="lazy"><figcaption>Лыжные трассы</figcaption></figure>
+  <figure><img src="img/park.jpg" alt="Парк аттракционов" loading="lazy"><figcaption>Парк аттракционов</figcaption></figure>
+ </div>
+ <p class="note">Иллюстрации — ИИ-арт по мотивам игры; скриншоты из игры добавим после открытия. Art: AI illustrations inspired by the game.</p>
+</section>
+<section id="socials" class="reveal">
+ <h2>Мы в соцсетях · Follow</h2>
+ <div class="socials">
+  <a href="https://www.roblox.com/games/124887751218092">▶ Roblox</a>
+  <a href="https://www.tiktok.com/@swapmefoxcity">TikTok</a>
+  <a href="https://www.youtube.com/channel/UCB5VlyEtYK2ac3uzUVtD4jw">YouTube</a>
+  <a href="https://x.com/dtDWZ91l1eUEAIO">X</a>
+  <a href="posts/">📰 Все посты</a>
+ </div>
+</section>
 <section id="share">
  <h2>Позови друга без рекламы</h2>
  <div class="sharebox">
@@ -121,7 +159,7 @@ a:focus-visible,button:focus-visible{outline:3px solid #fff;outline-offset:4px}
 <div class="f"><h3>Как меняться?</h3><p>Оба игрока кладут монеты, оба подтверждают, отсчёт 5 секунд.</p></div>
 <div class="f"><h3>Можно играть с друзьями?</h3><p>Да: обмен, картинг, клуб EPIX и экскурсии лис-гидов.</p></div>
 </div></section>
-<div class="foot">SwapMe Fox City · игра в Roblox · <a href="https://x.com/dtDWZ91l1eUEAIO">X</a> · <a href="https://www.tiktok.com/@swapmefoxcity">TikTok</a> · <a href="https://www.youtube.com/channel/UCB5VlyEtYK2ac3uzUVtD4jw">YouTube</a><br>Не связано с Roblox Corporation.</div>
+<div class="foot">SwapMe Fox City · игра в Roblox · <a href="posts/">Посты</a> · <a href="https://x.com/dtDWZ91l1eUEAIO">X</a> · <a href="https://www.tiktok.com/@swapmefoxcity">TikTok</a> · <a href="https://www.youtube.com/channel/UCB5VlyEtYK2ac3uzUVtD4jw">YouTube</a><br>Не связано с Roblox Corporation.</div>
 <script>
 (function(){
   const deadline=Date.UTC(2026,10,11,17,0,0);

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://molotroka123-cell.github.io/swapme-fox-city/sitemap.xml

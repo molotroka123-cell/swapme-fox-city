@@ -24,3 +24,5 @@ a{color:#ffbf85}a:hover{color:#fff}button,a{touch-action:manipulation}button{fon
 
 .world-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}.world-gallery figure{margin:0;overflow:hidden;background:var(--panel);border:1px solid var(--line);border-radius:15px}.world-gallery img,.world-gallery video{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}.world-gallery figcaption{padding:9px 12px;color:var(--muted);font-size:13px}
 @media(max-width:750px){.world-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:470px){.world-gallery{grid-template-columns:1fr}}
+
+.game .gimg{margin:-6px -6px 12px;position:relative}.game .gimg img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:13px}.game .gimg figcaption{position:absolute;left:8px;bottom:8px;background:rgba(14,7,29,.8);color:#ffd9b3;font-size:11px;font-weight:700;padding:3px 8px;border-radius:99px}.funnel{margin:26px 0 18px}
